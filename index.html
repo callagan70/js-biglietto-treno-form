@@ -35,24 +35,37 @@ Write with VSC + ADD Comment Anchors
 <!-- SECTION 1 -->
 <h1>Calcola il prezzo</h1>
 <div id="prezzohtml">
-                <br>
-  <div>
-      <div>
-        <h2>Nome e Cognome</h2>
-        <div><input type="text"></div>
-      </div>
 
-      <div>
-        <h2>Km da percorrere</h2>
-        <div><input type="text"></div>
-      </div>
+                <form method="get">
+                  <div class="inputform">
+                    <div class="d-flex">
+                          <label for="name">Nome e cognome</label>
+                          <input type="text" id="name" name="name">
+                    </div>
+                  
+                    <div class="d-flex">
+                          <label for="kilometri">Km da percorrere</label>
+                          <input type="number" id="kilometri" name="kilometri" min="1" max="5000">
+                    </div>
+                  
+                    <div class="d-flex">
+                      <label for="eta">Età ?</label>
+                      <select name="eta" id="eta">
+                            <option value="none">---------</option>
+                            <option value="minore">minore 18</option>
+                            <option value="tra">tra 18 e 65</option>
+                            <option value="più">più di 65</option>
+                      </select>
+                    </div>
+                  
+                  </div>
+                  
+                    <div class="bottoni">
+                            <input type="submit" value="Submit">
+                            <input type="reset">
+                    </div>
+                  </form>
 
-      <div>
-        <h2>Fascia di et&#224</h2>
-        <div><input type="text"></div>
-      </div>
-  </div>
-                  <br>
 </div>
 
 <!-- !SECTION 1 end-->
@@ -65,9 +78,8 @@ Write with VSC + ADD Comment Anchors
 <div id="bigliettohtml">
   <!-- <h2>Dettaglio passeggeri</h2> -->
   <div class="nomebiglietto">
-      <div>
-
-      </div>
+    <h2>Nome Passeggero</h2>
+    <p id="nomepasseggero"></p>
 
   </div>
 
@@ -94,51 +106,9 @@ Write with VSC + ADD Comment Anchors
       <h3>2.91€</h3>
     </div>
 
+  </div>
 </div>
-
-
-
-
-
-</div>
-
-
 <!-- !SECTION 2 end-->
-
-
-<div id="start">
-  <h1>Per sapere il prezzo puscia sul buttun!</h1>
-  <button onclick="interrogatorio(); interrogatorio2()"><i>Buttun</i></button>
-</div>
-
-<div id="name"></div>
-
-<div id="tessera"></div>
-
-<div id="eta"></div>
-
-<!-- NOTE si può inserire un ID all'interno di un DIV già "indicizzato"? -->
-
-<!-- <div id="km">
-</div>
-<div id="km1"></div>
-<div id="km2"></div> -->
-
-<!-- NOTE <div id="km-1"></div> non funziona, gli ID posso contenere caratteri speciali come il "-" ? -->
-<!-- NOTE <div class="km1"></div> non funziona con Classname -->
-
- <!-- NOTE <span id="km1"></span> questo funziona ma fuori dal DIV-->
-
-
-
-
-
-
-
-  
-
-
-
 
 
 
